@@ -1,0 +1,72 @@
+body{
+    background: rgb(203, 243, 191);
+    
+}
+
+.body-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+.rena-page-title{
+    position: relative;
+    margin: 2rem;
+    text-align: center;
+    color: rgb(45, 207, 153);
+    text-shadow: rgb(139, 170, 155) 3px 3px 6px;
+}
+
+.card-title-color{
+    color: rgb(45, 207, 153);
+}
+
+
+.rena-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 6%;
+}
+
+
+@media (max-width: 1080px) {
+
+    .rena-container{
+        flex-direction: column;
+    }
+
+}
+
+.card{
+    background-color: rgb(169, 240, 198);
+    box-shadow: rgb(145, 170, 158) 2px 2px 8px;
+    transition: 0.5s;
+    margin: 1.5rem;
+    margin-top: 2rem;
+    word-wrap: unset;
+    height: 640px;
+}
+
+.card:hover{
+    transform: translate(3px,-3px);
+    cursor: default;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.5
+    }
+}
+
+.blink{
+    animation: blinker 0.35s linear 3;
+    background-color: rgb(169, 240, 198);
+    box-shadow: rgb(145, 170, 158) 2px 2px 8px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+
+}
